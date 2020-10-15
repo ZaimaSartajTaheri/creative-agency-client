@@ -53,7 +53,7 @@ const Sidebar = () => {
 
           </div> : <div>
                   <li>
-                      <Link className="sidebar-link" to="/addOrder">
+                      <Link className="sidebar-link" to="/home">
                           <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
                       </Link>
                   </li>
