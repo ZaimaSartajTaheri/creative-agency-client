@@ -8,18 +8,18 @@ import airbnb from '../../../utilities/images/logos/airbnb.png';
 
 const Brands = () => {
     return (
-        <div className='container mt-5 mb-5 '>
-            <div className="card-deck brands">
+        <div className='container text-center mt-5 mb-5 '>
+            <div className="row brands">
                 <div className="card col-md-2 brand">
                     <img src={slack} alt="" />
                 </div>
                 <div className="card col-md-2 brand">
                     <img src={google} alt="" />
                 </div>
-                <div className="card col-md-2 big-brand">
+                <div className="card col-md-2 brand">
                     <img src={uber} alt="" />
                 </div>
-                <div className="card col-md-2 big-brand">
+                <div className="card col-md-2 brand">
                     <img src={netflix} alt="" />
                 </div>
                 <div className="card col-md-2 brand">

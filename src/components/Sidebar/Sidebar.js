@@ -7,7 +7,7 @@ import { faSignOutAlt, faCalendar, faShoppingCart, faUserPlus, faShoppingBasket,
 import { UserContext } from '../../App';
 
 
-const Sidebar = () => {
+const SidebarItem = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
 
@@ -24,57 +24,59 @@ const Sidebar = () => {
             });
     }, [])
 
+    
+
     return (
-        <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4 " style={{ height: "100vh" }}>
+      <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4 " style={{ height: "100vh" }}>
 
-            <ul className="list-unstyled">
-                <li>
-                    <Link className="navbar-brand" to="/home"><img style={{ height: '50px' }} src={logo} alt="" /></Link>
-                </li>
+      <ul className="list-unstyled">
+          <li>
+              <Link className="navbar-brand" to="/home"><img style={{ height: '50px' }} src={logo} alt="" /></Link>
+          </li>
 
-                {isAdmin ? <div>
-                    <li>
-                        <Link className="sidebar-link" to="/allOrders">
-                            <FontAwesomeIcon icon={faShoppingBasket} /> <span>Service List</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="sidebar-link" to="/addService">
-                            <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="sidebar-link" to="/makeAdmin">
-                            <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
-                        </Link>
-                    </li>
+          {isAdmin ? <div>
+              <li>
+                  <Link className="sidebar-link" to="/allOrders">
+                      <FontAwesomeIcon icon={faShoppingBasket} /> <span>Service List</span>
+                  </Link>
+              </li>
+              <li>
+                  <Link className="sidebar-link" to="/addService">
+                      <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
+                  </Link>
+              </li>
+              <li>
+                  <Link className="sidebar-link" to="/makeAdmin">
+                      <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
+                  </Link>
+              </li>
 
-                </div> : <div>
-                        <li>
-                            <Link className="sidebar-link" to="/addOrder">
-                                <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="sidebar-link" to="/userServices">
-                                <FontAwesomeIcon icon={faShoppingBasket} /> <span>Service List</span>
-                            </Link>
-                        </li>
+          </div> : <div>
+                  <li>
+                      <Link className="sidebar-link" to="/addOrder">
+                          <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+                      </Link>
+                  </li>
+                  <li>
+                      <Link className="sidebar-link" to="/userServices">
+                          <FontAwesomeIcon icon={faShoppingBasket} /> <span>Service List</span>
+                      </Link>
+                  </li>
 
-                        <li>
-                            <Link className="sidebar-link" to="/addReview">
-                                <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
-                            </Link>
-                        </li>
-                    </div>}
+                  <li>
+                      <Link className="sidebar-link" to="/addReview">
+                          <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
+                      </Link>
+                  </li>
+              </div>}
 
 
-            </ul>
-            <div>
-                <Link className="sidebar-link" to="/home" onClick={() => { setLoggedInUser({}) }}><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
-            </div>
-        </div>
+      </ul>
+      <div>
+          <Link className="sidebar-link" to="/home" onClick={() => { setLoggedInUser({}) }}><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
+      </div>
+  </div>
     );
 };
 
-export default Sidebar;
+export default SidebarItem;

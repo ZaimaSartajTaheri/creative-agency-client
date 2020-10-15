@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import Sidebar from '../../Sidebar/Sidebar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './MakeAdmin.css';
 
 const MakeAdmin = () => {
@@ -34,6 +36,9 @@ const MakeAdmin = () => {
             <div className="col-md-9 col-sm-12 col-12 bg-white">
                 <div id="content">
                 </div>
+        
+                   
+            
                 <nav className="navbar navbar-expand-lg ">
                     <h3 className="navbar-brand">Add Admin</h3>
                     <ul className="navbar-nav ml-auto">
