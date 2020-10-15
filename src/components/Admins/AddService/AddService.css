@@ -1,0 +1,51 @@
+.serviceFormContainer{
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    height: 400px;
+    width: 70%;
+    padding: 5% 10% 10% 5%;
+    background-color: white;
+}
+.form-control{
+    width:60%;
+}
+.service-right-part{
+    background-color: #E5E5E5;
+    padding: 5% 0 10% 5%;
+    height:95vh;
+    
+}
+.input-box{
+    border: 0.666667px solid #C9C9C9;
+    box-sizing: border-box;
+    border-radius: 3.33333px;
+    width: 60%;
+    height: 40px;     
+
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .upload-btn{
+    border: 2px solid #009444;
+    color:#009444;
+    background-color:#DEFFED;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .icon{
+    color:#009444;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }

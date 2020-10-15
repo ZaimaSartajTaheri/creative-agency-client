@@ -1,0 +1,15 @@
+.all-orders{
+    background-color: #E5E5E5;
+    height:1000px;
+    width:1400px;
+    padding: 5% 0 10% 5%;
+}
+.addOrdersForm{
+    width: 1000px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    height: 700px;
+    padding: 5% 10% 10% 5%;
+    background-color: white;
+}
+

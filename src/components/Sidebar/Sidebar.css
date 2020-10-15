@@ -1,0 +1,15 @@
+.sidebar li{
+    margin-bottom: 2em;
+}
+.sidebar span,svg{
+    color:black;
+}
+.sidebar svg{
+    margin-right: 5px;
+}
+.sidebar-link{
+    white-space: nowrap;
+}
+.sidebar-link:hover{
+    text-decoration:none;
+}
