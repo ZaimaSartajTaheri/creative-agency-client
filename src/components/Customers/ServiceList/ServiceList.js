@@ -10,7 +10,7 @@ const ServiceList = () => {
     const [userServices, setUserServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/userServices?email=' + loggedInUser.email, {
+        fetch('https://guarded-badlands-59559.herokuapp.com/userServices?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

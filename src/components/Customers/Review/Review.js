@@ -21,7 +21,7 @@ const Review = () => {
         const reviewData = { ...info };
         reviewData.photo = loggedInUser.photo;
 
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://guarded-badlands-59559.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

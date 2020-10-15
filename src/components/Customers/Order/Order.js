@@ -14,7 +14,7 @@ const Order = () => {
     const { serviceId } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getServiceData/${serviceId}`)
+        fetch(`https://guarded-badlands-59559.herokuapp.com/getServiceData/${serviceId}`)
             .then(res => res.json())
             .then(data => setServiceData(data))
     }, [])
@@ -60,7 +60,7 @@ const Order = () => {
 
 
 
-        fetch('http://localhost:5000/orderedService', {
+        fetch('https://guarded-badlands-59559.herokuapp.com/orderedService', {
             method: 'POST',
             body: formData
         })

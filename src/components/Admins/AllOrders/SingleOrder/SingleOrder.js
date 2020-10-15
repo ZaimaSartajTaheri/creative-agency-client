@@ -11,7 +11,7 @@ const SingleOrder = (props) => {
     const handleStatusChange = (e) => {
         const status = e.target.value;
 
-        fetch(`http://localhost:5000/updateStatus/${_id}`, {
+        fetch(`https://guarded-badlands-59559.herokuapp.com/updateStatus/${_id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status })
@@ -25,7 +25,7 @@ const SingleOrder = (props) => {
             })
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/status/${_id}`)
+        fetch(`https://guarded-badlands-59559.herokuapp.com/status/${_id}`)
             .then(res => res.json())
             .then(data => setNewStatus(data))
     }, [])

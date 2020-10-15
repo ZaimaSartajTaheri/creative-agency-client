@@ -29,7 +29,7 @@ const AddService = () => {
         formData.append('title', info.title);
         formData.append('description', info.description);
 
-        fetch('http://localhost:5000/addServices', {
+        fetch('https://guarded-badlands-59559.herokuapp.com/addServices', {
             method: 'POST',
             body: formData
         })

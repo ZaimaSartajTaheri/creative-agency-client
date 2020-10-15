@@ -10,7 +10,7 @@ const AllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://guarded-badlands-59559.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [])
