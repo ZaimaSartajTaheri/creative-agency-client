@@ -3,8 +3,6 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import Sidebar from '../../Sidebar/Sidebar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './MakeAdmin.css';
 
 const MakeAdmin = () => {

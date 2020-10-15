@@ -7,7 +7,7 @@ import { faSignOutAlt, faCalendar, faShoppingCart, faUserPlus, faShoppingBasket,
 import { UserContext } from '../../App';
 
 
-const SidebarItem = () => {
+const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
 
@@ -79,4 +79,4 @@ const SidebarItem = () => {
     );
 };
 
-export default SidebarItem;
+export default Sidebar;
